@@ -3,22 +3,16 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #6c7279;
-  -webkit-font-smoothing: antialiased; /*сглаживание шрифтов*/
+  -webkit-font-smoothing: antialiased;
+  /*сглаживание шрифтов*/
   background-color: white;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -27,6 +21,7 @@ p {
 }
 
 /*Container*/
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -50,11 +45,11 @@ p {
   justify-content: space-between;
   padding: 35px 0;
   align-items: center;
-
   border-bottom: 1px solid #515369;
 }
 
 /*Nav*/
+
 .nav {
   display: flex;
   font-size: 13px;
@@ -67,7 +62,6 @@ p {
   color: white;
   text-decoration: none;
   opacity: 0.75;
-
   transition: opacity 0.2s linear;
 }
 
@@ -80,6 +74,7 @@ p {
 }
 
 /*Intro*/
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -115,6 +110,7 @@ p {
 }
 
 /*Button*/
+
 .btn {
   display: inline-block;
   vertical-align: top;
@@ -136,6 +132,7 @@ p {
 }
 
 /*Features*/
+
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -168,6 +165,7 @@ p {
 }
 
 /*Works*/
+
 .works {
   display: flex;
   flex-wrap: wrap;
@@ -206,7 +204,6 @@ p {
   opacity: 0;
   z-index: 2;
   background-color: rgba(232, 69, 69, 0.9);
-
   transition: opacity 0.2s linear;
 }
 
@@ -224,6 +221,7 @@ p {
 }
 
 /*Team*/
+
 .team {
   margin: 100px 0;
 }
@@ -246,21 +244,56 @@ p {
   height: auto;
   margin-bottom: 20px;
 }
+
 .team__name {
   margin-bottom: 8px;
   font-size: 22px;
   color: #2d3033;
 }
+
 .team__prof {
   margin-bottom: 15px;
   font-size: 13px;
   color: #e84545;
   text-transform: uppercase;
 }
+
 .team__text {
   font-size: 14px;
   line-height: 1, 5;
   color: #6c7279;
+  margin-bottom: 20px;
 }
-.team__social {
+
+/*Social*/
+
+.social {
+  display: flex;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+  background-color: #fff;
+  border: 1px solid #e8ecee;
+  transition: background .1s linear;
+}
+
+.social__item:hover {
+  background-color: #e8ecee;
+}
+
+.social__item:hover .social__icon {
+  fill: #000;
+}
+
+.social__icon {
+  display: block;
+  height: 18px;
+  fill: #c6cacc;
+  transition: fill .1s linear;
 }
