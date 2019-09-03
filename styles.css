@@ -310,6 +310,21 @@ p {
   transition: fill 0.1s linear;
 }
 
+.social--footer {
+  justify-content: center;
+}
+
+.social--footer .social__item {
+  background-color: transparent; /*прозразность*/
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 2px;
+}
+
+.social--footer .social__item:hover {
+  background: #fff;
+}
+
 /*reviews*/
 
 .reviews {
@@ -379,4 +394,43 @@ p {
   color: #2d3033;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/*Footer*/
+
+.footer {
+  padding: 70px 0;
+  background-color: #3a3e64;
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__block {
+  width: 33.33333%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.footer__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer__address {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.footer__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 1.5;
 }
