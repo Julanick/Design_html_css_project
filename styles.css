@@ -8,11 +8,18 @@ body {
   background-color: white;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -280,7 +287,7 @@ p {
   margin-right: 4px;
   background-color: #fff;
   border: 1px solid #e8ecee;
-  transition: background .1s linear;
+  transition: background 0.1s linear;
 }
 
 .social__item:hover {
@@ -295,5 +302,54 @@ p {
   display: block;
   height: 18px;
   fill: #c6cacc;
-  transition: fill .1s linear;
+  transition: fill 0.1s linear;
+}
+
+/*reviews*/
+
+.reviews {
+  background-color: #53354a;
+  overflow: hidden;
+}
+
+.reviews__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__photo {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+
+.reviews__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 80px;
+}
+
+.reviews__text {
+  margin-bottom: 25px;
+  font-family: "Cardo", sans-serif;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.reviews__author{
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
 }
