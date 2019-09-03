@@ -399,11 +399,11 @@ p {
 /*Footer*/
 
 .footer {
-  padding: 70px 0;
   background-color: #3a3e64;
 }
 
 .footer__inner {
+  padding: 70px 0;
   display: flex;
   flex-wrap: wrap;
 }
