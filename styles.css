@@ -87,7 +87,8 @@ p {
   flex-direction: column;
   justify-content: center;
   height: 750px;
-  background: #31344e url("img/intro-bg.jpg") center no-repeat / cover;
+  background: #31344e url("img/intro-bg.jpg") center no-repeat;
+  background-size: cover;
   padding-top: 100px;
 }
 
@@ -433,4 +434,10 @@ p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   line-height: 1.5;
+}
+
+/*Media*/
+
+@media(max-width:1200px) {
+  
 }
