@@ -55,6 +55,18 @@ p {
   border-bottom: 1px solid #515369;
 }
 
+.header.fixed {
+  position: fixed;
+  height: auto;
+  background: #31344e;
+}
+
+.header.fixed .header__inner {
+  padding: 15px 0;
+  border-bottom: 0;
+}
+
+
 /*Nav*/
 
 .nav {
