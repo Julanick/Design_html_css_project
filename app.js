@@ -41,4 +41,15 @@ $(function() {
         event.preventDefault();
         nav.toggleClass("show");
     });
+
+    /* Slider : https://kenwheeler.github.io/slick/ */
+
+    let slider = $("#reviewsSlider");
+    slider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false
+    });
 });
